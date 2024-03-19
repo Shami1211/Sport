@@ -29,15 +29,17 @@ const getById = async (req, res, next) => {
   };
   
   const addStock = async (req, res, next) => {
-    const { date,name,deposit,exprend,saving } = req.body;
+    const { name,qty,size,date,company,price } = req.body;
     let stock;
     try {
       stock = new Stock({
-        date,
+        
         name,
-        deposit,
-        exprend,
-        saving
+        qty,
+        size,
+        date,
+        company,
+        price
       });
       await stock.save();
     } catch (err) {

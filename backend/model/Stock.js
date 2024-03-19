@@ -4,23 +4,29 @@ const Schema = mongoose.Schema;
 
 const stockSchema = new Schema({ 
 
-      date: {
-        type: String,
-        required: true,
-      },
+      
       name: {
         type: String,
         required: true,
       },
-      deposit: {
+      qty: {
         type: Number,
         required: true,
       }, 
-      exprend: {
+      size: {
         type: Number,
         required: true,
       }, 
-      saving: {
+      date: {
+        type: String,
+        required: true,
+      },
+      company: {
+        type: String,
+        required: true,
+      }
+      ,
+      price: {
         type: Number,
         required: true,
       }, 
