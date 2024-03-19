@@ -1,12 +1,10 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import BudgetHome from './components/Budget-Planning/Budget/BudgetHome';
-import AddBudget from './components/Budget-Planning/Add Budget/AddBudget';
-import Budgets from './components/Budget-Planning/Budget/Budgets';
-import PostHome from './components/Add-Post/Post/PostHome';
-import AddPost from './components/Add-Post/Add Post/AddPost';
-import Posts from './components/Add-Post/Post/Posts';
+
+import AddStock from './components/Stock-Managing/Add Stock/AddStock';
+import Stocks from './components/Stock-Managing/Stock/Stocks';
+
 
 function App() {
   return (
@@ -14,14 +12,10 @@ function App() {
       <Router>
         <Routes>
           {/* Budget Routes */}
-          <Route exact path="/" element={<BudgetHome />} />
-          <Route exact path="/addbudget" element={<AddBudget />} />
-          <Route exact path="/budgets" element={<Budgets />} />
+          
+          <Route exact path="/" element={<AddStock />} />
+          <Route exact path="/stocks" element={<Stocks />} />
 
-          {/* Post Routes */}
-          <Route exact path="/postHome" element={<PostHome />} />
-          <Route exact path="/addpost" element={<AddPost />} />
-          <Route exact path="/posts" element={<Posts />} />
         </Routes>
       </Router>
     </div>

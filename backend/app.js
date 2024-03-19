@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 //Routers
-const budget_router = require("./routes/stock-routes");
+const stock_router = require("./routes/stock-routes");
 
 
 // Middlewares

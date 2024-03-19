@@ -1,0 +1,72 @@
+/* AddStock.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif; /* Using a professional font */
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Background color for the entire page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .stock-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background for the form box */
+  }
+  
+  .stock-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .stock-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 75px;
+  }
+  
+  .stock-left,
+  .stock-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stock-label {
+    font-weight: bold;
+  }
+  
+  .stock-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .stock-error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .stock-add-btn {
+    background-color: #8bc34a; /* Light green background for the button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .stock-container {
+      max-width: 90%;
+    }
+  }
+  
