@@ -5,13 +5,13 @@ const cors = require("cors");
 const app = express();
 
 //Routers
-const budget_router = require("./routes/budget-routes");
+const budget_router = require("./routes/stock-routes");
 
 
 // Middlewares
 app.use(express.json());
 app.use(cors());
-app.use("/budgets", budget_router); // localhost:5000/budgets
+app.use("/stocks", stock_router); // localhost:5000/stocks
 
 
 
